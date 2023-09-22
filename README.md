@@ -19,3 +19,15 @@
         "build:esm": "tsc",
         "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
 ```
+
+## Instruction for publishing
+
+```
+<!-- login to npm first -->
+npm login
+```
+
+```
+<!-- publish to npm library -->
+npm publish
+```
