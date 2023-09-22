@@ -1,5 +1,5 @@
 {
-    "name": "component-library-example",
+    "name": "yhs-typescript-components",
     "version": "1.0.0",
     "description": "An example component library for react / learning",
     "main": "dist/cjs/index.js",
@@ -26,5 +26,12 @@
     "peerDependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
+    },
+    "types": "./dist/cjs/index.d.ts",
+    "dependencies": {
+        "csstype": "^3.1.2",
+        "js-tokens": "^4.0.0",
+        "loose-envify": "^1.4.0",
+        "scheduler": "^0.23.0"
     }
 }
