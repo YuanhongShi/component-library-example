@@ -1,0 +1,30 @@
+{
+    "name": "component-library-example",
+    "version": "1.0.0",
+    "description": "An example component library for react / learning",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "clean": "rd /s /q dist",
+        "build": "rd /s /q dist && prettier --write src/ & npm run build:esm && npm run build:cjs ",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "author": "Yuanhong Shi",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.6.3",
+        "@types/react": "^18.2.22",
+        "@types/react-dom": "^18.2.7",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.2.2"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
